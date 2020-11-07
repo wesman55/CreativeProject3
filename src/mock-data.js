@@ -179,7 +179,7 @@ let mock = [{
     name: "Exploding Kittens",
     price: "$10.99",
     category: "Cards",
-    image: "kittens.jpg",
+    image: "kitten.jpg",
     quantity: 0
   },
   {
@@ -252,7 +252,7 @@ let mock = [{
     name: "Mansions of Madness",
     price: "$99.99",
     category: "Fantasy",
-    image: "mansion.jpg",
+    image: "mansion.png",
     quantity: 0
   },
   {
@@ -260,7 +260,7 @@ let mock = [{
     name: "Dungeons and Dragons",
     price: "$34.99",
     category: "Fantasy",
-    image: "dragons.jpg",
+    image: "dragon.jpg",
     quantity: 0
   },
   {
@@ -285,7 +285,7 @@ let mock = [{
     name: "Lord of The Rings: Journeys in Middle-Earth",
     price: "$99.99",
     category: "Fantasy",
-    image: "lord.jpg",
+    image: "lord.png",
     quantity: 0
   },
   {
@@ -309,7 +309,7 @@ let mock = [{
     name: "Mysterium",
     price: "$89.99",
     category: "Adventure",
-    image: "mysterium.jpg",
+    image: "mysteryium.jpg",
     quantity: 0
   },
   {
@@ -322,82 +322,82 @@ let mock = [{
   },
   {
     id: 41,
-    name: "Heavy Whipping Cream",
-    price: "$8.78",
-    country: "Brazil",
-    image: 'heavy-cream.jpg',
+    name: "Civilization",
+    price: "$74.99",
+    category: "Strategy",
+    image: 'civilization.jpg',
     quantity: 0
   },
   {
     id: 42,
-    name: "Red Bell Pepper",
-    price: "$9.03",
-    country: "Brazil",
-    image: 'red-bell-pepper.jpg',
+    name: "Ticket To Ride",
+    price: "$49.99",
+    category: "Strategy",
+    image: 'ticket.jpg',
     quantity: 0
   },
   {
     id: 43,
-    name: "Perrier",
-    price: "$9.36",
-    country: "United States",
-    image: 'perrier.jpg',
+    name: "7 Wonders",
+    price: "$54.99",
+    category: "Adventure",
+    image: 'wonders.jpg',
     quantity: 0
   },
   {
     id: 44,
-    name: "Yukon Gold Potatoes",
-    price: "$8.76",
-    country: "Mexico",
-    image: 'yukon-potatoes.jpg',
+    name: "Quelf",
+    price: "$49.99",
+    category: "Party",
+    image: 'quelf.jpg',
     quantity: 0
   },
   {
     id: 45,
-    name: "Salmon Fillets",
-    price: "$6.21",
-    country: "United States",
-    image: 'salmon-fillets.jpg',
+    name: "Secret Hitler",
+    price: "$34.99",
+    category: "Party",
+    image: 'hitler.jpg',
     quantity: 0
   },
   {
     id: 46,
-    name: "Tilapia Fillets",
-    price: "$4.37",
-    country: "Mexico",
-    image: 'tilapia.jpg',
+    name: "Forbidden Island",
+    price: "$34.99",
+    category: "Adventure",
+    image: 'island.jpg',
     quantity: 0
   },
   {
     id: 47,
-    name: "Tomato Pesto",
-    price: "$9.70",
-    country: "Brazil",
-    image: 'tomato-pesto.jpg',
+    name: "Backgammon",
+    price: "$24.99",
+    category: "Classic",
+    image: 'back.jpg',
     quantity: 0
   },
   {
     id: 48,
-    name: "Oil - Olive Bertolli",
-    price: "$8.92",
-    country: "Brazil",
-    image: 'olive-oil.jpg',
+    name: "Mouse Trap",
+    price: "$24.99",
+    category: "Classic",
+    image: 'mouse.jpg',
     quantity: 0
   },
   {
     id: 49,
-    name: "Tear Drop Yellow Tomatoes",
-    price: "$3.32",
-    country: "Mexico",
-    image: 'yellow-tomatoes.jpg',
+    name: "Gloomhaven: Jaws of the Lion",
+    price: "$89.99",
+    category: "Fantasy",
+    image: 'lion.jpg',
     quantity: 0
   },
   {
     id: 50,
-    name: "Smoked Paprika",
-    price: "$8.31",
-    country: "Brazil",
-    image: 'smoked-paprika.jpg',
+    name: "Scene It",
+    price: "$29.99",
+    category: "Trivia",
+    image: 'scene.jpg',
     quantity: 0
   }
 ]
