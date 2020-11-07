@@ -120,7 +120,7 @@ body {
 .footer {
   border-top: 3px solid #000000;
   text-align: center;
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 #menu2 {
