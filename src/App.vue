@@ -90,7 +90,8 @@ body {
 }
 
 #brand img {
-  height: 200px;
+  height: auto;
+  width: 100%;
 }
 
 #side {
