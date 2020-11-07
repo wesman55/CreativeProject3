@@ -1,27 +1,44 @@
 <template>
   <div id="app">
-  <div id="menu">
-  <div id="brand">
-    <router-link to="/">
-      <img src="../images/logo.png">
-    </router-link>
-  </div>
-  <div id="side">
-    <router-link to="/browse">
-      <div class="menu-item browse">
-        <img src="../images/review.png">
-        <p>Reviews</p>
+    <div id="menu">
+      <div id="brand">
+        <router-link to="/">
+          <img src="../images/logo.png">
+        </router-link>
       </div>
-    </router-link>
-    <router-link to="/cart">
-      <div class="menu-item">
-        <img src="../images/cart.png">
-        <p>{{ numberOfItems }} items</p>
+      <div id="side">
+        <router-link to="/browse">
+        <div class="menu-item browse">
+          <img src="../images/review.png">
+          <p>Reviews</p>
+        </div>
+        </router-link>
+        <router-link to="/cart">
+        <div class="menu-item">
+          <img src="../images/cart.png">
+          <p>{{ numberOfItems }} items</p>
+        </div>
+        </router-link>
       </div>
-    </router-link>
+    </div>
+    <router-view />
+
+    <div class = "footer">
+      <div class="part-one">
+        <h3> Website Links</h3>
+          <ul id="menu2">
+            <li><router-link to="/">Home</router-link></li>
+            <li><router-link to="/browse">Browse</router-link></li>
+            <li><router-link to="/cart">Cart</router-link></li>
+            <li><a href="https://github.com/BYU-CS-260-Winter-2020/lab-3b-grocery-store-wesman55">GitHub Repository (URL: https://github.com/BYU-CS-260-Winter-2020/lab-3b-grocery-store-wesman55) </a></li>
+          </ul>
+      </div>
+      <div class="part=two">
+        Created by Joseph Wesley Fairbanks <br><br>
+      </div>
+    </div>
   </div>
-</div>
-</div>
+
 </template>
 
 <style>

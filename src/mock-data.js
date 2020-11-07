@@ -1,9 +1,9 @@
 let mock = [{
     id: 1,
-    name: "Checkers",
-    price: "$5.62",
-    country: "United States",
-    image: 'egg-salad.jpg',
+    name: "Gloomhaven",
+    price: "$106.99",
+    category: "Fantasy Adventure",
+    image: 'gloomhaven.jpg',
     quantity: 0
   },
   {
