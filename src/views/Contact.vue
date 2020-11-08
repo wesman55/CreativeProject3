@@ -43,7 +43,10 @@
     font-size: 18pt;
   }
   p {
-    font-size: 14pt;
+    font-size: 12pt;
+  }
+  strong {
+    font-size: 10pt;
   }
   .home {
     width: 100%;
@@ -55,6 +58,7 @@
   }
   .services-grid {
     width: 100%;
+    height: auto;
   }
 }
 </style>

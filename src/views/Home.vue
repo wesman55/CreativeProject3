@@ -102,6 +102,7 @@ h1 {
 }
 .services-grid {
   width: 100%;
+  height: auto;
 }
 }
 

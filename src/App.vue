@@ -163,6 +163,12 @@ li a:hover {
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0px;
+  }
+  body {
+    margin: 30px;
   }
   #logo {
     margin-bottom: 20px;
