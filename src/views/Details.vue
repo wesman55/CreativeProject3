@@ -1,11 +1,15 @@
 <template>
 <div class="body">
     <h1 v-if="this.$root.$data.current != null"> {{this.$root.$data.current.name }} </h1>
+    <div class="all">
     <div class="columns">
         <div class="columnitem pic">
-            <img v-if="this.$root.$data.current != null" :src="'/images/' + this.$root.$data.current.image">
+            <div class = "makewide">
+                <img v-if="this.$root.$data.current != null" :src="'/images/' + this.$root.$data.current.image">
+            </div>
         </div>
-        <div class= "columnitem">
+        <div v-if="this.$root.$data.current != null" class= "columnitem">
+            <div class = "makewide">
             <h2>Current Ranking: {{ranked()}} of 50 </h2>
             <h2>Average Rating:  {{this.$root.$data.current.rating}} of 10 </h2>
             <h2>Num of Current Votes: {{this.$root.$data.current.numvoters}} </h2>
@@ -13,7 +17,9 @@
                 <h2>Give a Rating: </h2>
                 <star-rating @rating-selected ="setRating" :increment="0.5" :max-rating="10" text-class="stars"></star-rating>
             </div>    
+            </div>
         </div>
+    </div>
     </div>
 
 </div>
@@ -93,4 +99,5 @@ b {
     display:flex;
     flex-wrap: wrap;
 }
+
 </style>
