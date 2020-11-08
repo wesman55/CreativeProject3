@@ -7,7 +7,13 @@
         </router-link>
       </div>
       <div id="side">
-        <router-link to="/browse">
+      <router-link to="/browse">
+      <div class="menu-item browse">
+        <img src="/images/browseicon.png">
+        <p>Browse</p>
+      </div>
+      </router-link>
+        <router-link to="/review">
         <div class="menu-item browse">
           <img src="../images/review.png">
           <p>Reviews</p>
@@ -29,17 +35,28 @@
           <ul id="menu2">
             <li><router-link to="/">Home</router-link></li>
             <li><router-link to="/browse">Browse</router-link></li>
+            <li><router-link to="/reviews">Reviews</router-link></li>
             <li><router-link to="/cart">Cart</router-link></li>
-            <li><a href="https://github.com/BYU-CS-260-Winter-2020/lab-3b-grocery-store-wesman55">GitHub Repository (URL: https://github.com/BYU-CS-260-Winter-2020/lab-3b-grocery-store-wesman55) </a></li>
+            <li><a href="https://github.com/wesman55/CreativeProject3">GitHub Repository (URL: https://github.com/wesman55/CreativeProject3) </a></li>
           </ul>
       </div>
       <div class="part=two">
-        Created by Joseph Wesley Fairbanks <br><br>
+        Created by Cayman Williams and Joseph Wesley Fairbanks <br><br>
       </div>
     </div>
   </div>
 
 </template>
+
+<script>
+export default {
+  computed: {
+    numberOfItems() {
+      return this.$root.$data.cart.length;
+      }
+  }
+}
+</script>
 
 <style>
 #app {
@@ -80,7 +97,11 @@ body {
 }
 
 #menu a {
-  color: #B84901;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+#menu a:hover {
+  color: blue;
 }
 
 #brand {
@@ -121,6 +142,7 @@ body {
   border-top: 3px solid #000000;
   text-align: center;
   margin-top: 50px;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 }
 
 #menu2 {

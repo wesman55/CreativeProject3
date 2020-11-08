@@ -2,17 +2,17 @@
 <div class="wrapper">
   <div class="products">
     <div class="product" v-for="product in products" :key="product.id">
-      <router-link to="/details" v-on:click="updateDetails(product)">
-        <div class="info">
-          <h1>{{product.name}}</h1>
-          <p>{{product.country}}</p>
-        </div>
-        <div class="image">
-          <img :src="'/images/'+product.image">
-        </div>
+      <router-link to="/details">
+      <div class="image" v-on:click="updateDetails(product)">
+        <img :src="'/images/'+product.image">
+      </div>
+      <div class="info" v-on:click="updateDetails(product)">
+        <h2>{{product.name}}</h2>
+        <p>{{product.category}}</p>
+      </div>
       </router-link>
       <div class="price">
-        <h2>{{product.price}}</h2>
+        <h3>{{product.price}}</h3>
         <button @click="addItem(product)" class="auto">Add to Cart</button>
       </div>
     </div>
@@ -39,8 +39,7 @@ export default {
       this.$root.$data.cart.push(product);
     },
     updateDetails(product) {
-      console.log("hello")
-      console.log(product)
+      this.$root.$data.current = product;
     }
   }
 }
@@ -63,13 +62,12 @@ export default {
 .product {
   margin: 10px;
   margin-top: 50px;
-  width: 200px;
+  width: 300px;
 }
 
 .product img {
-  border: 2px solid #333;
-  height: 250px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
   object-fit: cover;
 }
 
@@ -80,35 +78,52 @@ export default {
 }
 
 .info {
-  background: #F2921D;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
   color: #000;
   padding: 10px 30px;
   height: 80px;
+  margin-bottom: 10px;
 }
 
-.info h1 {
-  font-size: 16px;
-}
 
 .info h2 {
-  font-size: 14px;
+  font-size: 22px;
+}
+
+.price h3 {
+  font-size: 24pt;
 }
 
 .info p {
   margin: 0px;
-  font-size: 10px;
+  font-size: 16px;
 }
 
-
 .price {
-  display: flex;
+  margin-top: 10px;
+  display: block;
 }
 
 button {
-  height: 50px;
-  background: #000;
-  color: white;
-  border: none;
+  background-color: #FFFFFF;
+  border: 2px solid black;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  width: 70%
+}
+
+button:hover {
+  border: 2px solid #D3D3D3;
+}
+
+button:click {
+  border: 2px solid #FFFFFF;
 }
 
 .auto {
