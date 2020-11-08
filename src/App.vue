@@ -29,7 +29,7 @@
             <li><router-link to="/browse">Browse</router-link></li>
             <li><router-link to="/contact">Contact</router-link></li>
             <li><router-link to="/cart">Cart</router-link></li>
-            <li><a href="https://github.com/wesman55/CreativeProject3">GitHub Repository (URL: https://github.com/wesman55/CreativeProject3) </a></li>
+            <li><a href="https://github.com/wesman55/CreativeProject3">GitHub Repository </a></li>
           </ul>
       </div>
       <div class="part=two">
@@ -163,6 +163,12 @@ li a:hover {
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0px;
+  }
+  body {
+    margin: 30px;
   }
   #logo {
     margin-bottom: 20px;

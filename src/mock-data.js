@@ -180,7 +180,7 @@ let mock = [{
   },
   {
     id: 19,
-    name: "Betrayal at House on the Hill",
+    name: "Betrayal",
     price: "$49.99",
     category: "Adventure",
     image: "betrayal.jpg",
@@ -321,7 +321,7 @@ let mock = [{
   },
   {
     id: 33,
-    name: "Dungeons and Dragons",
+    name: "Dungeons & Dragons",
     price: "$34.99",
     category: "Fantasy",
     image: "dragon.jpg",
@@ -482,7 +482,7 @@ let mock = [{
   },
   {
     id: 49,
-    name: "Gloomhaven: Jaws of the Lion",
+    name: "Gloomhaven DLC",
     price: "$89.99",
     category: "Fantasy",
     image: 'lion.jpg',
