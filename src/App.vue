@@ -16,7 +16,7 @@
         <router-link to="/cart">
         <div class="menu-item">
           <img src="../images/cart.png">
-          <p>{{ numberOfItems }} items</p>
+          <!-- <p>{{ numberOfItems }} items</p> -->
         </div>
         </router-link>
       </div>

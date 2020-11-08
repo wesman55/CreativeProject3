@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Browse from '../views/Browse.vue'
+import Details from '../views/Details.vue'
 
 Vue.use(VueRouter)
 
@@ -16,6 +17,11 @@ const routes = [
     name: 'Browse',
     component: Browse
   },
+  {
+    path: '/details',
+    name: 'Details',
+    component: Details
+  }
 ]
 
 const router = new VueRouter({

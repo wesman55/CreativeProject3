@@ -2,13 +2,15 @@
 <div class="wrapper">
   <div class="products">
     <div class="product" v-for="product in products" :key="product.id">
-      <div class="info">
-        <h1>{{product.name}}</h1>
-        <p>{{product.country}}</p>
-      </div>
-      <div class="image">
-        <img :src="'/images/'+product.image">
-      </div>
+      <router-link to="/details" v-on:click="updateDetails(product)">
+        <div class="info">
+          <h1>{{product.name}}</h1>
+          <p>{{product.country}}</p>
+        </div>
+        <div class="image">
+          <img :src="'/images/'+product.image">
+        </div>
+      </router-link>
       <div class="price">
         <h2>{{product.price}}</h2>
         <button @click="addItem(product)" class="auto">Add to Cart</button>
@@ -35,6 +37,10 @@ export default {
       }
       product.quantity = 1;
       this.$root.$data.cart.push(product);
+    },
+    updateDetails(product) {
+      console.log("hello")
+      console.log(product)
     }
   }
 }
@@ -107,5 +113,9 @@ button {
 
 .auto {
   margin-left: auto;
+}
+
+a {
+  text-decoration: none;
 }
 </style>
