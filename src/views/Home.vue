@@ -16,7 +16,7 @@
       </router-link>
     </div>
     <div class="box">
-      <router-link to="/reviews">
+      <router-link to="/cart">
       <img class = "image" src="/images/cart.jpg" alt="Cart">
       <h6>View Cart</h6>
       </router-link>
