@@ -256,4 +256,11 @@ h4 {
   font-size: 16pt;
 }
 
+@media only screen and (max-width: 990px) {
+ h1 {
+    font-size: 18pt;
+    margin: auto;
+ }
+}
+
 </style>
