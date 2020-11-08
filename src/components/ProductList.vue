@@ -11,6 +11,10 @@
       </div>
       <div class="price">
         <h3>{{product.price}}</h3>
+        <form class = "thing">
+          <label>Quantity: </label>
+          <input type="number" v-model="quantity" min="1" max="100000">
+        </form>
         <button @click="addItem(product)" class="auto">Add to Cart</button>
       </div>
     </div>
@@ -24,17 +28,30 @@ export default {
   props: {
     products: Array
   },
+  data() {
+    return {
+      quantity: '',
+    }
+  },
   methods: {
     addItem(product) {
       let id = product.id;
       for (let i = 0; i < this.$root.$data.cart.length; i++) {
         if (this.$root.$data.cart[i].id === id) {
-            this.$root.$data.cart[i].quantity += 1;
+            this.$root.$data.cart[i].quantity += this.quantity;
+            this.quantity = '';
             return;
         }
       }
-      product.quantity = 1;
-      this.$root.$data.cart.push(product);
+      if (this.quantity === '') {
+        product.quantity = 1;
+        this.$root.$data.cart.push(product);
+      }
+      else {
+        product.quantity = this.quantity;
+        this.$root.$data.cart.push(product);
+        this.quantity = '';
+      }
     }
   }
 }
@@ -123,5 +140,10 @@ button:click {
 
 .auto {
   margin-left: auto;
+}
+
+.thing {
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  margin-bottom: 15px;
 }
 </style>
