@@ -29,7 +29,7 @@
           <ul id="menu2">
             <li><router-link to="/">Home</router-link></li>
             <li><router-link to="/browse">Browse</router-link></li>
-            <li><router-link to="/reviews">Reviews</router-link></li>
+            <li><router-link to="/contact">Contact</router-link></li>
             <li><router-link to="/cart">Cart</router-link></li>
             <li><a href="https://github.com/wesman55/CreativeProject3">GitHub Repository (URL: https://github.com/wesman55/CreativeProject3) </a></li>
           </ul>
