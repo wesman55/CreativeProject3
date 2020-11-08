@@ -4,7 +4,7 @@ let mock = [{
     price: "$106.99",
     category: "Fantasy",
     image: 'gloomhaven.jpg',
-    quantity: 0,
+    quantity: 1,
     rating: 8.81,
     numvoters: 38970
   },
@@ -14,7 +14,7 @@ let mock = [{
     price: "$19.99",
     category: "Classic",
     image: "chess.jpg",
-    quantity: 0,
+    quantity: 1,
     rating: 7.11,
     numvoters: 27578
   },
@@ -24,7 +24,7 @@ let mock = [{
     price: "$51.99",
     category: "Fantasy",
     image: 'scythe.jpg',
-    quantity: 0,
+    quantity: 1,
     rating: 8.25,
     numvoters: 54538
   },
@@ -34,7 +34,7 @@ let mock = [{
     price: "$69.99",
     category: "Strategy",
     image: 'brass.jpg',
-    quantity: 0,
+    quantity: 1,
     rating: 8.65,
     numvoters: 16446
   },
@@ -44,7 +44,7 @@ let mock = [{
     price: "$25.99",
     category: "Classic",
     image: 'scrabble.jpg',
-    quantity: 0,
+    quantity: 1,
     rating: 6.28,
     numvoters: 25881
   },
@@ -54,7 +54,7 @@ let mock = [{
     price: "$29.99",
     category: "Classic",
     image: 'monopoly.jpg',
-    quantity: 0,
+    quantity: 1,
     rating: 4.36,
     numvoters: 27208
   },
@@ -64,7 +64,7 @@ let mock = [{
     price: "$32.99",
     category: "Strategy",
     image: 'catan.jpg',
-    quantity: 0,
+    quantity: 1,
     rating: 7.16,
     numvoters: 97942
   },
@@ -74,7 +74,7 @@ let mock = [{
     price: "$21.99",
     category: "Strategy",
     image: 'clue.jpg',
-    quantity: 0,
+    quantity: 1,
     rating: 5.67,
     numvoters: 17012
   },
@@ -84,7 +84,7 @@ let mock = [{
     price: "$19.99",
     category: "Cards",
     image: 'codenames.jpg',
-    quantity: 0,
+    quantity: 1,
     rating: 7.63,
     numvoters: 64329
   },
@@ -94,7 +94,7 @@ let mock = [{
     price: "$23.99",
     category: "Strategy",
     image: 'risk.jpg',
-    quantity: 0,
+    quantity: 1,
     rating: 5.59,
     numvoters: 29392
   },
@@ -104,7 +104,7 @@ let mock = [{
     price: "$59.99",
     category: "Strategy",
     image: "pandemic.jpg",
-    quantity: 0,
+    quantity: 1,
     rating: 7.61,
     numvoters: 98226
   },
@@ -114,7 +114,7 @@ let mock = [{
     price: "$10.99",
     category: "Classic",
     image: "connectfour.jpg",
-    quantity: 0,
+    quantity: 1,
     rating: 4.87,
     numvoters: 6599
   },
@@ -124,7 +124,7 @@ let mock = [{
     price: "$34.99",
     category: "Trivia",
     image: "trivial.jpg",
-    quantity: 0,
+    quantity: 1,
     rating: 5.23,
     numvoters: 7334
   },
@@ -134,7 +134,7 @@ let mock = [{
     price: "$24.99",
     category: "Adventure",
     image: "candyland.jpg",
-    quantity: 0,
+    quantity: 1,
     rating: 3.18,
     numvoters: 3840
   },
@@ -144,7 +144,7 @@ let mock = [{
     price: "$24.99",
     category: "Strategy",
     image: "battleship.jpg",
-    quantity: 0,
+    quantity: 1,
     rating: 4.63,
     numvoters: 8209
   },
@@ -154,7 +154,7 @@ let mock = [{
     price: "$19.99",
     category: "Drawing",
     image: "pictionary.jpg",
-    quantity: 0,
+    quantity: 1,
     rating: 5.82,
     numvoters: 6722
   },
@@ -164,7 +164,7 @@ let mock = [{
     price: "$30.99",
     category: "Classic",
     image: "life.jpeg",
-    quantity: 0,
+    quantity: 1,
     rating: 4.3,
     numvoters: 10244
   },
@@ -174,7 +174,7 @@ let mock = [{
     price: "$9.99",
     category: "Classic",
     image: "jenga.jpg",
-    quantity: 0,
+    quantity: 1,
     rating: 5.60,
     numvoters: 11177
   },
@@ -184,7 +184,7 @@ let mock = [{
     price: "$49.99",
     category: "Adventure",
     image: "betrayal.jpg",
-    quantity: 0,
+    quantity: 1,
     rating: 7.06,
     numvoters: 35803
   },
@@ -194,7 +194,7 @@ let mock = [{
     price: "$19.99",
     category: "Classic",
     image: "chutes.jpg",
-    quantity: 0,
+    quantity: 1,
     rating: 2.85,
     numvoters: 3609
   },
@@ -204,7 +204,7 @@ let mock = [{
     price: "$24.99",
     category: "Classic",
     image: "guess.jpg",
-    quantity: 0,
+    quantity: 1,
     rating: 4.79,
     numvoters: 4433
   },
@@ -214,7 +214,7 @@ let mock = [{
     price: "$9.99",
     category: "Cards",
     image: "apples.jpg",
-    quantity: 0,
+    quantity: 1,
     rating: 5.82,
     numvoters: 17302
   },
@@ -224,7 +224,7 @@ let mock = [{
     price: "$10.99",
     category: "Cards",
     image: "kitten.jpg",
-    quantity: 0,
+    quantity: 1,
     rating: 6.02,
     numvoters: 19849
   },
@@ -234,7 +234,7 @@ let mock = [{
     price: "$100.99",
     category: "Adventure",
     image: "mars.jpg",
-    quantity: 0,
+    quantity: 1,
     rating: 8.43,
     numvoters: 60106
   },
@@ -244,7 +244,7 @@ let mock = [{
     price: "$24.99",
     category: "Classic",
     image: "twister.jpg",
-    quantity: 0,
+    quantity: 1,
     rating: 4.54,
     numvoters: 3758
   },
@@ -254,7 +254,7 @@ let mock = [{
     price: "$24.99",
     category: "Strategy",
     image: "stratego.jpg",
-    quantity: 0,
+    quantity: 1,
     rating: 6.09,
     numvoters: 13456
   },
@@ -264,7 +264,7 @@ let mock = [{
     price: "$24.99",
     category: "Classic",
     image: "sorry.jpeg",
-    quantity: 0,
+    quantity: 1,
     rating: 4.51,
     numvoters: 5650
   },
@@ -274,7 +274,7 @@ let mock = [{
     price: "$20.99",
     category: "Trivia",
     image: "scatter.jpg",
-    quantity: 0,
+    quantity: 1,
     rating: 6.19,
     numvoters: 8224
   },
@@ -284,7 +284,7 @@ let mock = [{
     price: "$14.99",
     category: "Classic",
     image: "yahtzee.jpg",
-    quantity: 0,
+    quantity: 1,
     rating: 5.38,
     numvoters: 11346
   },
@@ -294,7 +294,7 @@ let mock = [{
     price: "$29.99",
     category: "Strategy",
     image: "blockus.jpg",
-    quantity: 0,
+    quantity: 1,
     rating: 6.89,
     numvoters: 22248
 
@@ -305,7 +305,7 @@ let mock = [{
     price: "$34.99",
     category: "Trivia",
     image: "cranium.jpg",
-    quantity: 0,
+    quantity: 1,
     rating: 5.68,
     numvoters: 8402
   },
@@ -315,7 +315,7 @@ let mock = [{
     price: "$99.99",
     category: "Fantasy",
     image: "mansion.png",
-    quantity: 0,
+    quantity: 1,
     rating: 7.30,
     numvoters: 12603
   },
@@ -325,7 +325,7 @@ let mock = [{
     price: "$34.99",
     category: "Fantasy",
     image: "dragon.jpg",
-    quantity: 0,
+    quantity: 1,
     rating: 6.54,
     numvoters: 1710
   },
@@ -335,7 +335,7 @@ let mock = [{
     price: "$19.99",
     category: "Drawing",
     image: "tele.jpg",
-    quantity: 0,
+    quantity: 1,
     rating: 7.40,
     numvoters: 12219
 
@@ -346,7 +346,7 @@ let mock = [{
     price: "$29.99",
     category: "Classic",
     image: "operation.jpg",
-    quantity: 0,
+    quantity: 1,
     rating: 4.09,
     numvoters: 3455
   },
@@ -356,7 +356,7 @@ let mock = [{
     price: "$99.99",
     category: "Fantasy",
     image: "lord.png",
-    quantity: 0,
+    quantity: 1,
     rating: 6.75,
     numvoters: 14032
   },
@@ -366,7 +366,7 @@ let mock = [{
     price: "$19.99",
     category: "Cards",
     image: "uno.jpg",
-    quantity: 0,
+    quantity: 1,
     rating: 5.39,
     numvoters: 20224
   },
@@ -376,7 +376,7 @@ let mock = [{
     price: "$19.99",
     category: "Drawing",
     image: "scrawl.jpg",
-    quantity: 0,
+    quantity: 1,
     rating: 7.13,
     numvoters: 382
   },
@@ -386,7 +386,7 @@ let mock = [{
     price: "$89.99",
     category: "Adventure",
     image: "mysteryium.jpg",
-    quantity: 0,
+    quantity: 1,
     rating: 7.32,
     numvoters: 30390
   },
@@ -396,7 +396,7 @@ let mock = [{
     price: "$19.99",
     category: "Classic",
     image: "checkers.jpg",
-    quantity: 0,
+    quantity: 1,
     rating: 4.88,
     numvoters: 6938
   },
@@ -406,7 +406,7 @@ let mock = [{
     price: "$74.99",
     category: "Strategy",
     image: 'civilization.jpg',
-    quantity: 0,
+    quantity: 1,
     rating: 7.50,
     numvoters: 7050
   },
@@ -416,7 +416,7 @@ let mock = [{
     price: "$49.99",
     category: "Strategy",
     image: 'ticket.jpg',
-    quantity: 0,
+    quantity: 1,
     rating: 7.43,
     numvoters: 69190
   },
@@ -426,7 +426,7 @@ let mock = [{
     price: "$54.99",
     category: "Adventure",
     image: 'wonders.jpg',
-    quantity: 0,
+    quantity: 1,
     rating: 7.76,
     numvoters: 81566
   },
@@ -436,7 +436,7 @@ let mock = [{
     price: "$49.99",
     category: "Party",
     image: 'quelf.jpg',
-    quantity: 0,
+    quantity: 1,
     rating: 5.28,
     numvoters: 2484
   },
@@ -446,7 +446,7 @@ let mock = [{
     price: "$34.99",
     category: "Party",
     image: 'hitler.jpg',
-    quantity: 0,
+    quantity: 1,
     rating: 7.57,
     numvoters: 17025
   },
@@ -456,7 +456,7 @@ let mock = [{
     price: "$34.99",
     category: "Adventure",
     image: 'island.jpg',
-    quantity: 0,
+    quantity: 1,
     rating: 6.80,
     numvoters: 40601
   },
@@ -466,7 +466,7 @@ let mock = [{
     price: "$24.99",
     category: "Classic",
     image: 'back.jpg',
-    quantity: 0,
+    quantity: 1,
     rating: 6.53,
     numvoters: 11358
   },
@@ -476,7 +476,7 @@ let mock = [{
     price: "$24.99",
     category: "Classic",
     image: 'mouse.jpg',
-    quantity: 0,
+    quantity: 1,
     rating: 4.11,
     numvoters: 2580
   },
@@ -486,7 +486,7 @@ let mock = [{
     price: "$89.99",
     category: "Fantasy",
     image: 'lion.jpg',
-    quantity: 0,
+    quantity: 1,
     rating: 9.02,
     numvoters: 4262
   },
@@ -496,7 +496,7 @@ let mock = [{
     price: "$29.99",
     category: "Trivia",
     image: 'scene.jpg',
-    quantity: 0,
+    quantity: 1,
     rating: 5.51,
     numvoters: 1420
   }

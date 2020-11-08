@@ -15,7 +15,7 @@
         <h3>{{product.price}}</h3>
         <form class = "thing">
           <label>Quantity: </label>
-          <input type="number" v-model="quantity" min="1" max="100000">
+          <input type="number" v-model="product.quantity" min="1" max="100000">
         </form>
         <button @click="addItem(product)" class="auto">Add to Cart</button>
       </div>
@@ -37,6 +37,7 @@ export default {
   },
   methods: {
     addItem(product) {
+      console.log(product.quantity)
       let id = product.id;
       for (let i = 0; i < this.$root.$data.cart.length; i++) {
         if (this.$root.$data.cart[i].id === id) {

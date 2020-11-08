@@ -13,12 +13,6 @@
         <p>Browse</p>
       </div>
       </router-link>
-        <router-link to="/review">
-        <div class="menu-item browse">
-          <img src="../images/review.png">
-          <p>Reviews</p>
-        </div>
-        </router-link>
         <router-link to="/cart">
         <div class="menu-item">
           <img src="../images/cart.png">
