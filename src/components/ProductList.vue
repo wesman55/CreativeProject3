@@ -37,7 +37,6 @@ export default {
   },
   methods: {
     addItem(product) {
-      console.log(product.quantity)
       let id = product.id;
       for (let i = 0; i < this.$root.$data.cart.length; i++) {
         if (this.$root.$data.cart[i].id === id) {
@@ -47,7 +46,6 @@ export default {
         }
       }
       if (this.quantity === '') {
-        product.quantity = 1;
         this.$root.$data.cart.push(product);
       }
       else {

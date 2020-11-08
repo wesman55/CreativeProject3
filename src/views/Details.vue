@@ -15,7 +15,7 @@
             </div>    
         </div>
     </div>
-    
+
 </div>
 </template>
 
@@ -74,6 +74,7 @@ img {
     text-align: center;
     width: 50%;
     align-items: center;
+    padding: 0px 20px;
 }
 
 .pic {
