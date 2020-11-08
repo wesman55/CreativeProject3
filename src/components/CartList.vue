@@ -16,14 +16,23 @@
         </div>
         <div class="price">
           <h3>{{product.price}}</h3>
-          <h4> Quantity: {{product.quantity}}</h4>
+        </div>
+        <h4> Quantity: {{product.quantity}}</h4>
+        <div class = "boxes">
+          <button @click="subtractOne(product)" class="quantity2"><strong>-</strong></button>
+          <button @click="addOne(product)" class="quantity1"><strong>+</strong></button>
         </div>
         <button @click="removeItem(product)" class="auto"><strong>Remove Item From Cart</strong></button>
-        <div class = "boxes">
-          <button @click="addOne(product)" class="quantity1">Add One to Quantity</button>
-          <button @click="subtractOne(product)" class="quantity2">Subtract One from Quantity</button>
-        </div>
       </div>
+    </div>
+    <div class="total">
+      <h2>Subtotal: ${{subtotal}}</h2>
+      <h2>Tax (8.3%): ${{tax}}</h2>
+      <h1>Total: ${{total}}</h1>
+    </div>
+    <button @click="submit()" class="auto2">Click Here to Confirm Purchase</button>
+    <div v-if="show()">
+      <h1>Thank You for your purchase!!!!<br> We will contact you shortly.</h1>
     </div>
   </div>
 </div>
@@ -34,6 +43,54 @@ export default {
   name: 'CartList',
   props: {
     products: Array
+  },
+  data() {
+    return {
+      submitted: false,
+    }
+  },
+  computed: {
+    subtotal() {
+    let total = 0;
+    let string = '';
+    let quantity = 0;
+    for (let i = 0; i < this.$root.$data.cart.length; i++) {
+      string = this.$root.$data.cart[i].price;
+      quantity = this.$root.$data.cart[i].quantity;
+      string = string.substring(1);
+      total += (parseFloat(string) * quantity);
+    }
+      return total.toFixed(2);
+    },
+    tax() {
+      let tax = 0;
+      let total = 0;
+      let string = '';
+      let quantity = 0;
+      for (let i = 0; i < this.$root.$data.cart.length; i++) {
+        string = this.$root.$data.cart[i].price;
+        quantity = this.$root.$data.cart[i].quantity;
+        string = string.substring(1);
+        total += (parseFloat(string) * quantity);
+      }
+      tax = 0.083 * total;
+      return tax.toFixed(2);
+    },
+    total() {
+      let tax = 0;
+      let total = 0;
+      let string = '';
+      let quantity = 0;
+      for (let i = 0; i < this.$root.$data.cart.length; i++) {
+        string = this.$root.$data.cart[i].price;
+        quantity = this.$root.$data.cart[i].quantity;
+        string = string.substring(1);
+        total += (parseFloat(string) * quantity);
+      }
+      tax = 0.083 * total;
+      total = total + tax;
+      return total.toFixed(2);
+    },
   },
   methods: {
     empty() {
@@ -56,6 +113,17 @@ export default {
       if (product.quantity == 0) {
         this.$root.$data.cart.splice(this.$root.$data.cart.indexOf(product),1);
         product.quantity = 0;
+      }
+    },
+    submit() {
+      this.submitted = true;
+    },
+    show() {
+      if (this.submitted === true) {
+        return true;
+      }
+      else {
+        return false;
       }
     },
   }
@@ -151,39 +219,41 @@ button:click {
   margin-left: auto;
 }
 
-.auto {
-  margin-left: auto;
-  margin-top: 10px;
-  font-size: 11pt;
+.auto2 {
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  width: 50%;
+  background-color: #000000;
+  color: white;
 }
 
 .quantity1 {
-  font-size: 10pt;
-  height: 50px;
+  font-size: 20pt;
+  padding: 0px;
   background: #22bc22;
   color: white;
-  margin-top: 5px;;
-  border: 2px solid black;
-  width: 45%;
+  width: 20%;
 }
 
 .quantity2 {
-  font-size: 10pt;
-  height: 50px;
+  font-size: 20pt;
+  padding: 0px;
   background: #a9a9a9;
   color: white;
-  margin-top: 5px;;
   border: 2px solid black;
-  width: 45%;
+  width: 20%;
 }
+
 
 .boxes {
   display: flex;
+  margin-bottom: 10px;
+  justify-content: center;
 }
 
 h4 {
   font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-
+  margin-bottom: 0px;
+  font-size: 16pt;
 }
 
 </style>
