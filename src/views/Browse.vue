@@ -61,6 +61,12 @@ export default {
 </script>
 
 <style scoped>
+.pure-menu-list {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .wrapper {
   display: flex;
   align-items: center;
@@ -92,5 +98,11 @@ input {
   box-shadow: none !important;
   width: 100%;
   height: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  li {
+    width: 100%;
+  }
 }
 </style>

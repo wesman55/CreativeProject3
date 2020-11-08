@@ -106,10 +106,10 @@ export default {
       product.quantity = 0;
     },
     addOne(product) {
-      product.quantity += 1;
+      product.quantity = parseInt(product.quantity) + 1;
     },
     subtractOne(product) {
-      product.quantity = product.quantity - 1;
+      product.quantity = parseInt(product.quantity) - 1;
       if (product.quantity == 0) {
         this.$root.$data.cart.splice(this.$root.$data.cart.indexOf(product),1);
         product.quantity = 0;

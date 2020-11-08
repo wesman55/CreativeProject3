@@ -1,22 +1,20 @@
 <template>
   <div id="app">
     <div id="menu">
-      <div id="brand">
+      <div id="brand" class="flexitem">
         <router-link to="/">
-          <img src="../images/logo.png">
+            <img id="logo" src="../images/logo.png">
         </router-link>
       </div>
-      <div id="side">
+      <div id="side" class="flexitem">
       <router-link to="/browse">
       <div class="menu-item browse">
         <img src="/images/browseicon.png">
-        <p>Browse</p>
       </div>
       </router-link>
         <router-link to="/cart">
         <div class="menu-item">
           <img src="../images/cart.png">
-          <!-- <p>{{ numberOfItems }} items</p> -->
         </div>
         </router-link>
       </div>
@@ -70,6 +68,10 @@ export default {
   color: #2c3e50;
 }
 
+#logo {
+  height:100px;
+}
+
 #nav a.router-link-exact-active {
   color: #42b983;
 }
@@ -102,11 +104,6 @@ body {
   grid-area: brand;
   display: flex;
   justify-content: center;
-}
-
-#brand img {
-  height: auto;
-  width: 100%;
 }
 
 #side {
@@ -159,5 +156,16 @@ li a {
 
 li a:hover {
   background-color: #C0C0C0;
+}
+
+@media only screen and (max-width: 700px) {
+  #menu {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #logo {
+    margin-bottom: 20px;
+  }
 }
 </style>
