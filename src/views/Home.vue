@@ -100,6 +100,9 @@ h1 {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+.services-grid {
+  width: 100%;
+}
 }
 
 @media only screen and (min-width: 991px) {

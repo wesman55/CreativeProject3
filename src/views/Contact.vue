@@ -51,6 +51,10 @@
   .description {
     margin-left: 10px;
     margin-right: 10px;
+    width: 100%;
+  }
+  .services-grid {
+    width: 100%;
   }
 }
 </style>

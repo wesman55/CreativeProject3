@@ -98,7 +98,7 @@ export default {
   color: #000;
   padding: 10px 30px;
   height: 80px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 
@@ -116,7 +116,7 @@ export default {
 }
 
 .price {
-  margin-top: 10px;
+  margin-top: 20px;
   display: block;
 }
 
