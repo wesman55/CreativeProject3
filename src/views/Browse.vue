@@ -39,14 +39,14 @@ export default {
   computed: {
     products() {
       if (this.searchText != '') {
-        return this.$root.$data.products.filter(product => product.name.toLowerCase().search(this.searchText) >= 0);
+        return this.$root.$data.products.filter(product => product.name.toLowerCase().search(this.searchText.toLowerCase()) >= 0);
       }
       else {
         if (this.category === "All") {
-          return this.$root.$data.products.filter(product => product.name.toLowerCase().search(this.searchText) >= 0);
+          return this.$root.$data.products.filter(product => product.name.toLowerCase().search(this.searchText.toLowerCase()) >= 0);
         }
         else if (this.category === ''){
-          return this.$root.$data.products.filter(product => product.name.toLowerCase().search(this.searchText) >= 0);
+          return this.$root.$data.products.filter(product => product.name.toLowerCase().search(this.searchText.toLowerCase()) >= 0);
         }
         return this.$root.$data.products.filter(product => product.category === this.category);
       }

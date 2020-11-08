@@ -2,18 +2,20 @@
 <div class="wrapper">
   <div class="products">
     <div class="product" v-for="product in products" :key="product.id">
-      <div class="image">
+      <router-link to="/details">
+      <div class="image" v-on:click="updateDetails(product)">
         <img :src="'/images/'+product.image">
       </div>
-      <div class="info">
+      <div class="info" v-on:click="updateDetails(product)">
         <h2>{{product.name}}</h2>
         <p>{{product.category}}</p>
       </div>
+      </router-link>
       <div class="price">
         <h3>{{product.price}}</h3>
         <form class = "thing">
           <label>Quantity: </label>
-          <input type="number" v-model="quantity" min="1" max="100000">
+          <input type="number" v-model="product.quantity" min="1" max="100000">
         </form>
         <button @click="addItem(product)" class="auto">Add to Cart</button>
       </div>
@@ -44,7 +46,6 @@ export default {
         }
       }
       if (this.quantity === '') {
-        product.quantity = 1;
         this.$root.$data.cart.push(product);
       }
       else {
@@ -52,6 +53,9 @@ export default {
         this.$root.$data.cart.push(product);
         this.quantity = '';
       }
+    },
+    updateDetails(product) {
+      this.$root.$data.current = product;
     }
   }
 }
@@ -142,8 +146,13 @@ button:click {
   margin-left: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 .thing {
   font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
   margin-bottom: 15px;
 }
+
 </style>

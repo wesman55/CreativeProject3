@@ -28,7 +28,7 @@
       </router-link>
     </div>
   </section>
-  <img class = "home2" src= "\images\home2.jpg">
+  <img class = "home" id="bottompic" src= "\images\home2.jpg">
 </div>
 </template>
 
@@ -78,6 +78,10 @@ h1 {
   width: auto;
   margin-top: 20px;
   margin-bottom: 0px;
+}
+
+#bottompic {
+  object-fit: cover;
 }
 
 @media only screen and (max-width: 990px) {
