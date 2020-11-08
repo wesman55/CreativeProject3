@@ -45,5 +45,12 @@
   p {
     font-size: 14pt;
   }
+  .home {
+    width: 100%;
+  }
+  .description {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 </style>
