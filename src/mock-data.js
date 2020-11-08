@@ -136,7 +136,7 @@ let mock = [{
   },
   {
     id: 18,
-    name: "jenga",
+    name: "Jenga",
     price: "$9.99",
     category: "Classic",
     image: "jenga.jpg",
@@ -282,7 +282,7 @@ let mock = [{
   },
   {
     id: 36,
-    name: "Lord of The Rings: Journeys in Middle-Earth",
+    name: "Lord of The Rings",
     price: "$99.99",
     category: "Fantasy",
     image: "lord.png",

@@ -7,6 +7,18 @@
       </form>
     </div>
   </div>
+  <div class="pure-menu pure-menu-horizontal">
+    <ul class="pure-menu-list">
+      <li class="pure-menu-item"><a @click="select('All')" href="#" class="pure-menu-link">All</a></li>
+      <li class="pure-menu-item"><a @click="select('Fantasy')" href="#" class="pure-menu-link">Fantasy</a></li>
+      <li class="pure-menu-item"><a @click="select('Classic')" href="#" class="pure-menu-link">Classic</a></li>
+      <li class="pure-menu-item"><a @click="select('Adventure')" href="#" class="pure-menu-link">Adventure</a></li>
+      <li class="pure-menu-item"><a @click="select('Cards')" href="#" class="pure-menu-link">Cards</a></li>
+      <li class="pure-menu-item"><a @click="select('Strategy')" href="#" class="pure-menu-link">Strategy</a></li>
+      <li class="pure-menu-item"><a @click="select('Party')" href="#" class="pure-menu-link">Party</a></li>
+      <li class="pure-menu-item"><a @click="select('Drawing')" href="#" class="pure-menu-link">Drawing</a></li>
+    </ul>
+  </div>
   <ProductList :products="products" />
 </div>
 </template>
@@ -21,13 +33,30 @@ export default {
   data() {
     return {
       searchText: '',
+      category: '',
     }
   },
   computed: {
     products() {
-      return this.$root.$data.products.filter(product => product.name.toLowerCase().search(this.searchText) >= 0);
-    }
+      if (this.searchText != '') {
+        return this.$root.$data.products.filter(product => product.name.toLowerCase().search(this.searchText) >= 0);
+      }
+      else {
+        if (this.category === "All") {
+          return this.$root.$data.products.filter(product => product.name.toLowerCase().search(this.searchText) >= 0);
+        }
+        else if (this.category === ''){
+          return this.$root.$data.products.filter(product => product.name.toLowerCase().search(this.searchText) >= 0);
+        }
+        return this.$root.$data.products.filter(product => product.category === this.category);
+      }
+    },
   },
+  methods: {
+    select(category) {
+      this.category = category;
+    }
+  }
 }
 </script>
 
@@ -42,6 +71,7 @@ export default {
   border: 1px solid #ccc;
   border-radius: 4px;
   width: 50%;
+  margin-bottom: 20px;
 }
 
 form {
